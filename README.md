@@ -97,6 +97,7 @@ resource "aws_cloudwatch_metric_alarm" "app_service_low_cpu" {
 - `access_log_bucket` - Bucket name used to collect load balancer access logs
 - `access_log_prefix` - Prefix within bucket to nest load balancer access logs
 - `health_check_path` - Path to use for service health check (default: `/`)
+- `health_check_matcher` - Desired response code for service health check (default: `200`)
 - `port` - Port used for the load balancer target group
 - `ssl_certificate_arn` - ARN of the certificate to associate with the HTTPS listener
 - `cluster_name` - ECS cluster name to associate with the service
